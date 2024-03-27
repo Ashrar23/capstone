@@ -23,7 +23,7 @@ print(mysql_datetime)  # Output: '2024-03-26 11:39:29'
 
 def Api_connect():
    ## AIzaSyBXtGe7Y1sg3tWPr01_I637je_S-JmX99g
-    Api_id = 'AIzaSyBlnHmI2JVNud0vWXWSZdotlz9lNIRNnWA'
+    Api_id = '#YOUR API KEY'
     api_service_name = "youtube"
     api_version = "v3"
     youtube = build(api_service_name, api_version, developerKey=Api_id)
@@ -365,7 +365,7 @@ def main():
 
     connection = pymysql.connect(host="localhost",
                                  user="root",
-                                 password="Ashrar@23",
+                                 password="YOURPASSWORD",
                                  database="capstone")
     
     with st.sidebar:
@@ -468,7 +468,7 @@ def main():
 def show_channels_details():
     connection = pymysql.connect(host="localhost",
                                  user="root",
-                                 password="Ashrar@23",
+                                 password="YOURPASSWORD",
                                  database="capstone")
     cursor = connection.cursor()
     cursor.execute("SELECT * FROM channels")
