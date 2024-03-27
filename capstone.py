@@ -22,8 +22,8 @@ print(mysql_datetime)  # Output: '2024-03-26 11:39:29'
 
 
 def Api_connect():
-   ## AIzaSyBXtGe7Y1sg3tWPr01_I637je_S-JmX99g
-    Api_id = '#YOUR API KEY'
+   
+    Api_id = 'YOUR API KEY'
     api_service_name = "youtube"
     api_version = "v3"
     youtube = build(api_service_name, api_version, developerKey=Api_id)
